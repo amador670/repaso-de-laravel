@@ -1,0 +1,10 @@
+**Modo de mantenimiento de inicio**
+Para iniciar el modo de mantenimiento, basta con ejecutar el siguiente comando:
+-php artisan down
+
+**Modo de mantenimiento de parada**
+Después de hacer cambios a su sitio web y para comenzar de nuevo, ejecute el siguiente comando. 
+-php artisan up
+
+
+

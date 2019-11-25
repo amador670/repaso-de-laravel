@@ -1,0 +1,26 @@
+return response($content = "valor de la variable", $status = 200, array $headers = []); es una funcion que se encarga de dar respuestas del servidor 
+
+1.- Primer parametro contenido de la respuesta
+2.- Estado de la respuesta, por defecto es 200 que significa okey
+3.- Es un array de las cabeceras o $headers 
+
+Se puede pasar un parametro que seria el contenido de la respuesta
+___________________________
+Ejem en el  pagesControllers: 
+//Creamos una variable que contiene un request que mostrara todos los datos
+$mostrarDatos = $request->all();
+		
+/*Esta peticion hace una redireccion 302 que nos retorna a otra pagina*/
+//Mensajes con sesiones con la propiedad with
+
+return redirect()->route("contactos")->with("mensajeSesion", "Mensaje enviado correctamente");
+___________________________
+Y en contactos.blade.php añadimos antes del formulario:
+
+//Si hay una sesion que contenga "mensajeSesion" se ejecuta el condicional
+@if(session()->has("mensajeSesion"))
+	<h3>{{ session("mensajeSesion") }}</h3>
+
+@else
+//Si no, mostramos elformulario..... 
+

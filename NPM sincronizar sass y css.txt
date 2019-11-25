@@ -1,0 +1,6 @@
+npm run dev = Se usa en la consola cmd para guardar los archivos .sass y transformarlos a css
+npm run watch = Se usa en la consola cmd y automaticamente guarda los archivos de sass a css
+
+*******************************************************************
+
+bootstrap 3 snippets 

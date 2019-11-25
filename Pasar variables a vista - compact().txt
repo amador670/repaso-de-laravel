@@ -1,0 +1,27 @@
+El metodo compact() nos permite pasar arreglos asociativos de forma rapida para ser mostrados en pantalla, este metodo transforma las variables  definidas a arrays, un ejemplo es:
+
+   public function index()
+    {
+      //en la variable $mensajes pasamos una base de datos, tabla  "mensaje" por el metodo get
+        $mensajes = DB::table("mensaje")->get();
+
+     //La mostramos en pantalla mediante compact($nombre definido de la variable)
+        return view("mensajes.index", compact("mensajes"));
+    }
+______________________________
+Otro ejemplo es:
+
+public function saludos($usuario = "Invitado"){
+  $html = "<h2>Contenido html</h2>";
+
+  $script = "<script>alert('Problema XSS - Cross Site   Scripting!')</script>";
+
+  $consolas = [
+    "Wii U",
+    "Xbox One",
+    "Play Station 4",
+    "Computer DELL"
+  ];
+
+return view("saludos", compact("usuario", "html", "script", "consolas"));
+}

@@ -1,0 +1,16 @@
+/* OTRAS FORMA DE AÑADIR EL CODIGO DE VALIDACION: (EJEMPLOS EN CONTROLLERS)*/
+        $rules = [
+        'nombre' => 'required|string|min:5|max:22',
+        'clave' => 'required|string|min:5|max:10',
+        //Validate imagen - Propiedad FILE
+        'imagen' => 'image|mimes:jpg,png,jpeg|dimensions:max_width=1000,max_height:1000',
+        ];
+
+        $this->validate($request, $rules); */
+
+___________________________________
+
+    $this->validate($request,[
+    'nombre'=>'required|min:4',
+    'clave'=>'required|min:4'
+    ]);

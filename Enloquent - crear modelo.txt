@@ -1,0 +1,1 @@
+php artisan make:model nombre_del_modelo de esta forma creamos automaticamente el modelo en la carpeta app/

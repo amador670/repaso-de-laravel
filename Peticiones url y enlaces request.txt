@@ -1,0 +1,4 @@
+Request::url() - Devuelve el valor de la url sin el enlace principal (url padre/dominio)
+Request::fullUrl() - Duelve el valor de la url completa
+Request::path() - Devuelve el valor del path partes de la url
+$request->root() - Devuelve solo la url principal (url padre/dominio)

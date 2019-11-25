@@ -1,0 +1,6 @@
+CRUD es el acrónimo de "Crear, Leer, Actualizar y Borrar".
+En inglés sería: 
+Create     | POST
+Read        | GET
+Update    | PUT/PATCH
+Delete     | DELETE

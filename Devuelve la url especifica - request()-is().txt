@@ -1,0 +1,3 @@
+<!--Devuelve una instancia si estas en una determinada url-->
+
+	<h1>{{ request()->is("/") ? "Estas en el Home" : "No estas en el Home"}}</h1>

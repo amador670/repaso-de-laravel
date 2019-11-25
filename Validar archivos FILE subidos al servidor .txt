@@ -1,0 +1,9 @@
+La validación de los archivo comprobando el mime-type. El mime-type de un archivo es una información que esta incluida en la cabecera del archivo. PHP es capaz de acceder a esta información para verificar dicho tipo.
+
+Ejemplo del condicional:
+
+if($_FILES[‘campo-formulario’][‘type’]==”text/plain”){
+ //movemos el achivo al directorio destino mode_uploaded_file(“directorio destino”) 
+} else {
+//Error
+}

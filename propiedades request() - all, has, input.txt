@@ -1,0 +1,12 @@
+Propiedad request de laravel, se encarga de recibir todos los solicitudes o peticiones http del navegador (url)
+
+1.- /*all() es para mostrar todos los valores*/
+2.- /*has() muestra si un campo contiene valor */
+3.- /*input() es para mostrar datos de un input*/
+
+public function mensaje(Request $request){
+  if($request->has("nombre")){
+      return "Nombre ingresado correctamente: " . $request->input("nombre");
+  } 
+   return "No tiene nombre";
+}

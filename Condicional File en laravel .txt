@@ -1,0 +1,6 @@
+Verificar si hay un archivo file con el valor 'photo' 
+
+if (Input::hasFile('photo'))
+{
+    //
+}

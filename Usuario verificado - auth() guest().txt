@@ -1,0 +1,7 @@
+guest() devuelve un valor boolean de verdadero o falso, ejemplo:
+
+@if(auth()->guest())
+  //Accion
+@endif
+
+Ese condicional esta indicando si es un usuario verificado ejecuta una accion de lo contrario no lo hara

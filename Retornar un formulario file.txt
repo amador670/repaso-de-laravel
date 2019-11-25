@@ -1,0 +1,11 @@
+$request->file('input_pdf')->getClientOriginalName();
+
+Would return the file name.
+
+You can do this to check if the file exists before calling any methods on it:
+
+if ($request->hasFile('input_pdf')) {
+    return $request->file('input_pdf')->getClientOriginalName();
+} else {
+    return 'no file!'
+}

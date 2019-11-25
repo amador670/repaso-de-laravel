@@ -1,0 +1,27 @@
+CÓDIGO A UTILIZAR INDEX.PHP(PUBLIC)
+
+$app = require_once __DIR__.'/../laravel3/agricolacentralcopia/bootstrap/app.php';
+$app->bind('path.public',function(){
+return __DIR__;
+});
+
+-------------------------
+.ENV
+DB_HOST=localhost
+DB_DATABASE=id1981318_agricola
+DB_USERNAME=id1981318_root
+DB_PASSWORD=CONTRASEÑA
+-------------------------------------------------------------
+INGRESA CONFIGURACIÓN DATABASE.PHP 
+'mysql' => [
+			'driver'    => 'mysql',
+			'host'      => env('DB_HOST', 'localhost'),
+			'database'  => env('DB_DATABASE', 'forge'),
+			'username'  => env('DB_USERNAME', 'forge'),
+                        'options' => [PDO::ATTR_EMULATE_PREPARES => true],
+			'password'  => env('DB_PASSWORD', ''),
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+			'strict'    => false,
+		],

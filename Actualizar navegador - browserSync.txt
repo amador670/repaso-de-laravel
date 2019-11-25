@@ -1,0 +1,5 @@
+mix.browserSync({
+  proxy: "practica-laravel.dev"
+});
+
+Esta propiedad nos permite actualizar el navegador automaticamente al hacer un cambio, esta propiedad se añade en webpack.mix.js, en el proxy: "nombre" añadimos el nombre de la url de la pagina 

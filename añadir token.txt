@@ -1,0 +1,33 @@
+Formas de añadir verificacion token CSRF 
+
+1.- <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+2.- {{ csrf_field() }}
+
+3.- @csrf
+
+4.- Generar solo el token {{ csrf_token() }}
+
+___________________________________
+Añadir metodo put y delete
+
+1.-  <input type="hidden" name="_method" value="PUT">
+
+2.- {{ method_field('PUT') }}
+
+3.- @method('PUT')
+
+4.- <input type="hidden" name="_method" value="DELETE">
+
+5.- {{ method_field('DELETE') }}
+
+6.- @method('DELETE')
+
+Demas metodos
+
+    @GET
+    @POST
+    @PUT
+    @DELETE
+    @HEAD
+    @OPTION

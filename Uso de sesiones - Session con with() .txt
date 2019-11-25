@@ -1,0 +1,17 @@
+En controllers añadimos: 
+
+$mostrarDatos = $request->all();
+		
+/*Esta peticion hace una redireccion 302 que nos retorna a otra pagina*/
+//Mensajes con sesiones con la propiedad with
+
+return redirect()->route("contactos")->with("mensajeSesion", "Mensaje enviado correctamente");
+______________________
+
+Y en el archivo contactos.blade.php añadimos: 
+
+@if(session()->has("mensajeSesion"))
+	<h3>{{ session("mensajeSesion") }}</h3>
+
+@else
+	Mostramos el formulario....

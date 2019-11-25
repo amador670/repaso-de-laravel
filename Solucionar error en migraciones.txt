@@ -1,0 +1,5 @@
+Si da error al crear una migracion en laravel hacemos lo siguiente
+
+1.- Crear en la base de datos de laravle una tabla con nombre 1,
+2.- añadir en todas las migraciones  Schema::dropIfExists('mensajes'); en la funcion up() de primero 
+3.- Borrar el cache de laravel

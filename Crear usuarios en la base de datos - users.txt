@@ -1,0 +1,18 @@
+En routes/web.php añadimos cualquiera de estas dos opciones y creamos de forma automatica un usuario en la base de datos, carpeta "users". 
+
+route::get("test", function(){
+	$user = new App\User;
+	$user->name = "amador";
+	$user->email = "amador@gmail.com";
+	$user->password = bcrypt("12345");
+	$user->save();
+
+	return $user;
+});
+______________________________________
+/*App\User::create([
+	"name" => "karla",
+	"email" => "karla@gmail.com",
+	"password" => bcrypt("12345"),
+	"status" => "Moderador"
+	]);*/

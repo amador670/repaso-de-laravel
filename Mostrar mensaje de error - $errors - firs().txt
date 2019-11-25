@@ -1,0 +1,7 @@
+De esta forma mostramos los errores de los inputs, la variable por defecto en laravel es $errors
+
+//Mostramos los errores del input con name="nombre" mas la clase que contiene
+
+{!! $errors->first("nombre", "<span class=error>:message</span>") !!}
+
+Y creamos en css la clase .error en css

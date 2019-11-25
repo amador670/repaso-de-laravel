@@ -1,0 +1,20 @@
+//Formulario sencillo en html con form
+{{ Form::open(array(
+     'url'=>'upload/', 
+     'method' => 'post',
+     'enctype'=>'multipart/form-data'
+) )}}
+
+{{ Form::file('archivo') }}
+{{ Form::submit('subir') }}
+
+{{ Form::close()}}
+_____________________________________________________
+//Condicional y verificacion el route :
+
+Route::post('/upload', function(){
+     if(Input::hasFile('archivo')) {
+          Input::file('archivo')->move('carpetarArchivos','NuevoNombre');
+     }
+     return Redirect::back(('/');
+});

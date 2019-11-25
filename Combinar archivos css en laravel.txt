@@ -1,0 +1,11 @@
+/*Combinar archivos CSS
+1.- Añadimos los dos archivos .css 
+2.- Añadimos nombre al archivo que se creara con los archivos combinados
+3.- Indicamos la ruta de los archivos que se combinaran
+4.- En la consola CMD indicamos gulp styles para combinar los archivos
+*/
+
+/*mix.style([
+  //archivo1.css
+  //archivo2.css
+], "public/css/archivoCombinado.css", "public/css");*/

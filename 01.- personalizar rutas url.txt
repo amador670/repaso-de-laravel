@@ -1,0 +1,9 @@
+
+//El primer parametro '/' es el nombre que indicamos para la ruta (url) personalizada y el segundo "as" => "index" es el nombre original del archivo
+Route::get('/', ["as" => "index", "uses" => "viewController@index"]);
+
+
+
+//Otro ejemplo
+//Primer parametro "aplicaciones" es el nombre de la url personalizado y el segundo "as" => "auth/aplicaciones" es el nombre original del archivo 
+route::get("aplicaciones", ["as" => "auth/aplicaciones", "uses" => "viewController@aplicaciones"]);

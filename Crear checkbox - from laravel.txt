@@ -1,0 +1,13 @@
+{{-- INDICAR ROLE AL REGISTRARSE --}}
+{{-- 
+<div class="radio">
+{{ Form::radio('role', 'admin', false, array("id" => "admin")) }} 
+{{ Form::label('admin', 'Administrador') }}
+
+{{ Form::radio('role', 'moderador', false, array("id" => "moderador")) }} 
+{{ Form::label('moderador', 'Moderador') }}
+
+{{ Form::radio('role', 'usuario', false, array("id" => "usuario")) }} 
+{{ Form::label('usuario', 'Usuario') }}
+</div>  
+--}}

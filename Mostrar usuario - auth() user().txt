@@ -1,0 +1,4 @@
+user() devuelve un objeto usuario y a traves de el podemos acceder a ciertos valor, ejemplo:
+
+{{ auth()->user()->nombre }}
+

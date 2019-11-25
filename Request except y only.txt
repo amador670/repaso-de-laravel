@@ -1,0 +1,7 @@
+Para indicar que solo quieres aceptar o validar un determinado parametro se usa only 
+$request->only(['fieldname1', 'fieldname2', 'fieldname3']);
+
+y 
+
+Except para indicar que no quieres que sea aceptado o validado
+$request->except(['fieldnameYouDontWant1', 'fieldnameYouDontWant2', 'fieldnameYouDontWant3'])

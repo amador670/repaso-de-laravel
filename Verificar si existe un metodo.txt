@@ -1,0 +1,10 @@
+1.-
+$this->attributes->has('class-key')) 
+
+2.-
+$this->attributes->get('class-key') == 'key-value'
+
+3.-
+$this->attributes->get('some-key') == 'key-value') {
+        $this->attributes->set('key', 'value');
+}

@@ -1,0 +1,18 @@
+Si abrimos nuestro proyecto laravel en la consola y añadimos 
+
+php artisan make:middleware nombre_del_middleware 
+
+nos crea el archivo middleware en la carpeta app\http\middleware... que es donde añadiremos nuestros codigos de restriccion, ejemplo:
+
+En app\http\middleware en el archivo middleware creado añadimos:
+
+public function handle($request, Closure $next) {
+  if(false){  
+        //Request() se encarga de las peticiones http procesadas por el servidor      
+            return $next($request);
+}
+       
+//La funcion response() se encarga de dar respuesta al servidor, si no es "true" el servidor dara la siguiente respuesta:
+        return response("No puedes continuar", 404);
+ }
+}   

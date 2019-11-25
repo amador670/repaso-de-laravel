@@ -1,0 +1,65 @@
+De esta forma se puede indicar si se recibio un metodo post o algun otro metodo
+$method = Request::method();
+if (Request::isMethod('post'))
+{
+    //
+}
+_______________________________________________________
+Determinar si la peticion tiene un atributo o patron especifico
+if (Request::is('admin/*'))
+{
+    //
+}
+_______________________________________________________
+Recibir la Url
+
+$url = Request::url();
+_______________________________________________________
+Recibir un segmento URI, en este ejemplo el primero de un enlace
+
+$segment = Request::segment(1);
+_______________________________________________________
+Recibir un header('Content-Type');
+
+$value = Request::header('Content-Type');
+_______________________________________________________
+Retrieving Values From $_SERVER
+
+$value = Request::server('PATH_INFO');
+_______________________________________________________
+Determining If The Request Is Over HTTPS
+
+if (Request::secure())
+{
+    //
+}
+_______________________________________________________
+Determine If The Request Is Using AJAX
+
+if (Request::ajax())
+{
+    //
+}
+_______________________________________________________
+Determine If The Request Has JSON Content Type
+
+if (Request::isJson())
+{
+    //
+}
+_______________________________________________________
+Determine If The Request Is Asking For JSON
+
+if (Request::wantsJson())
+{
+    //
+}
+_______________________________________________________
+Checking The Requested Response Format
+
+The Request::format method will return the requested response format based on the HTTP Accept header:
+
+if (Request::format() == 'json')
+{
+    //
+}

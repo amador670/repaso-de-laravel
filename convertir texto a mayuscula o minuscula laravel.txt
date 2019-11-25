@@ -1,0 +1,8 @@
+strtoupper - Convertir letras a mayuscula
+Ejemplo {{ strtoupper($producto->marca) }}
+
+strtolower - Convertir a minuscula 
+Ejemplo {{ strtolower($producto->marca) }}
+
+ucfirst - Convertir primera letra a mayuscula
+Ejemplo {{ ucfirst($producto->marca) }}

@@ -1,0 +1,4 @@
+{{ $variable }} De esta forma se muestra el contenido de la variable y muestra las propiedades htmlentities que contiene dicha variable, ejemplo si tiene <h1>Hola</h1> se muestra con las propiedades
+
+{!! $variable !!} De esta forma se ejecutan las propiedades htmlentities y se ejecuta el codigo, ejemplo si tiene <h1>Hola</h1>  se muestra el contenido en forma de titulo <h1>
+

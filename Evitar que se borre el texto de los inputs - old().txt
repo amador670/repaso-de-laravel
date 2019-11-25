@@ -1,0 +1,5 @@
+Con la propiedad old("nombre del input") evitamos que se borre el texto ingresado cuando hay un error
+
+Ejemplo:
+
+<input type="text" name="nombre" placeholder="Nombre" value="{{ old('nombre') }}">

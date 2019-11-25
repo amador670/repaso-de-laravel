@@ -1,0 +1,22 @@
+$rules = [
+        'student' => 'required|max:20',
+    	'score' => 'required|numeric|min:1|max:10',
+                 'phone' => 'required|max:20|min:6|regex:/^[0-9]+$/',
+             	'terms_of_services' => 'accepted',
+    ];
+ 
+    $this->validate($request, $rules);
+______________________________________________
+public function rules()
+   {
+       return [
+           'nombre' => 'required|string|max:60',
+           'sabor' => 'required|in:chocolate,vainilla,cheesecake'
+       ];
+   }
+_____________________________________________
+@if ($errors->has('phone'))
+<span class="help-block">
+    <strong>{{ $errors->first('phone') }}</strong>
+</span>
+@endif

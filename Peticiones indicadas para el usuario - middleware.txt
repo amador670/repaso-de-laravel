@@ -1,0 +1,30 @@
+Los Middleware: Son una capa o guardian que intersecta las peticiones de un usuario y verifica que se cumpla las reglas indicadas, en caso que no las cumpla la peticiones son terminadas, interceptar request, verificar que se cumplan ciertas reglas y en consecuencia dejar que termine o no lo indicado por el programador
+
+Ejemplo: Middleware en pagesControllers
+
+public function __construct(){
+   $this->middleware("verificarTokenCsrfExample", ["only" => ["contenidos", "informacion"]]);
+}
+	
+only = Indica que solo se añadiran ciertos elementos.
+except = Añadira todos los elementos, excepto el elemento indicado
+
+___________________________________
+Otra forma  de añadir middleware es en routes\web.php
+
+Añadir ->middleware("nombre del middleware en el kernel") al final de nuestro route, al final de la ruta que no queremos que se pueda acceder
+
+Se añade el middleware con el nombre indicado en app/http/kernel*/
+___________________________________
+En app\http\middleware en el archivo middleware creado añadimos:
+
+public function handle($request, Closure $next) {
+  if(false){  
+        //Request() se encarga de las peticiones http procesadas por el servidor      
+            return $next($request);
+}
+       
+//La funcion response() se encarga de dar respuesta al servidor, si no es "true" el servidor dara la siguiente respuesta:
+        return response("No puedes continuar", 404);
+ }
+}   

@@ -1,0 +1,3 @@
+<!--Devuelve una nueva instancia de la clase Illuminate\Http\Request con la url o direccion de la pagina-->
+
+	<h1>{{ request()->url() }}</h1>
